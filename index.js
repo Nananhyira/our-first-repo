@@ -14,3 +14,6 @@ class school{
 }
 let codetrian = new School("codetrain" , "adc");
  
+
+ let students =['jerry', 'elinam', 'esi', 'korkor','jamil','joseph']
+ console.log(students)
