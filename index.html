@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    
+  <style>
+    .listitem {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+  
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+   </ul>
+  
+  <script>
+   document.body.style.fontFamily = 'Arial, sans-serif';
+   document.getElementById('nickname').innerHTML = 'Pamela Fox';
+   document.getElementById('favorites').innerHTML = '27';
+   document.getElementById('hometown').innerHTML = 'Pasadena, CA';
+   var items = document.getElementsByTagName('li');
+   for (var i = 0; i < items.length; i++) {
+      items[i].className = 'listitem';
+   }
+    
+    var myPic = document.createElement('img');
+    myPic.src = 'http://gotocon.com/dl/jaoo_aus2008/photos/speakers/Pamela_Fox.jpg';
+    document.body.appendChild(myPic);
+  </script>
+
+</body>
+</html>
